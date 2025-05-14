@@ -1,0 +1,135 @@
+/* ====================================================
+   Manage Quiz Page Styles for Quiz Competition Plugin
+   ==================================================== */
+
+/* Overall container styling */
+.manage-quiz-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Heading styling */
+.manage-quiz-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007cba;
+    border-bottom: 2px solid #007cba;
+    padding-bottom: 5px;
+}
+
+/* Tab navigation (for dividing sections such as Quiz Details, Submission Time, and Questions & Options) */
+.manage-quiz-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.manage-quiz-tabs a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.manage-quiz-tabs a.active {
+    background: #007cba;
+    color: #fff;
+    border-color: #007cba;
+}
+
+/* Tab content containers */
+.manage-quiz-tab-content {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Form styling */
+.manage-quiz-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.manage-quiz-form input[type="text"],
+.manage-quiz-form input[type="number"],
+.manage-quiz-form input[type="datetime-local"],
+.manage-quiz-form textarea,
+.manage-quiz-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+.manage-quiz-form .form-section {
+    margin-bottom: 20px;
+}
+.manage-quiz-form .submit-button {
+    background: #007cba;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.manage-quiz-form .submit-button:hover {
+    background: #005a8c;
+}
+
+/* Questions & Options container styling */
+.manage-quiz-question {
+    background: #eef9ff;
+    border: 1px solid #cce0f4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.manage-quiz-question h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #007cba;
+}
+.manage-quiz-option p {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+.manage-quiz-question a.remove-question,
+.manage-quiz-option a.remove-option {
+    color: red;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+.manage-quiz-question a.remove-question:hover,
+.manage-quiz-option a.remove-option:hover {
+    color: darkred;
+}
+
+/* Button styling */
+.button {
+    background: #007cba;
+    color: #fff !important;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+.button:hover {
+    background: #005a8c;
+}

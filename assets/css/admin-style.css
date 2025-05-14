@@ -1,0 +1,64 @@
+/* Admin area styles for Quiz Competition */
+
+.wrap h1 {
+    margin-bottom: 20px;
+}
+
+.wp-list-table {
+    margin-top: 20px;
+}
+
+.qc_admin-tabs-nav {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.qc_admin-tabs-nav a {
+    padding: 10px 15px;
+    margin-right: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.qc_admin-tabs-nav a.active {
+    background: #007cba;
+    color: #fff;
+    border-color: #007cba;
+}
+
+.qc-admin-tab {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.qc-admin-tab.active {
+    display: block;
+}
+
+.qc_question {
+    background: #eef;
+    border: 1px solid #ccd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.qc_question h3 {
+    margin-top: 0;
+}
+
+.qc_options_container p {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+a.remove-question, a.remove-option {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+    text-decoration: none;
+}
